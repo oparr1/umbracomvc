@@ -1,0 +1,846 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\UmbracoCms.7.2.8\build\UmbracoCms.props" Condition="Exists('..\packages\UmbracoCms.7.2.8\build\UmbracoCms.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C10D58AC-DA00-4882-B756-E05DA5624FB2}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MvcUmbraco</RootNamespace>
+    <AssemblyName>MvcUmbraco</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <NuGetPackageImportStamp>a9485414</NuGetPackageImportStamp>
+    <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper">
+      <HintPath>..\packages\AutoMapper.3.0.0\lib\net40\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoMapper.Net4">
+      <HintPath>..\packages\AutoMapper.3.0.0\lib\net40\AutoMapper.Net4.dll</HintPath>
+    </Reference>
+    <Reference Include="businesslogic, Version=1.0.5675.23468, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\UmbracoCms.Core.7.2.8\lib\businesslogic.dll</HintPath>
+    </Reference>
+    <Reference Include="ClientDependency.Core, Version=1.8.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ClientDependency.1.8.4\lib\net45\ClientDependency.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ClientDependency.Core.Mvc">
+      <HintPath>..\packages\ClientDependency-Mvc.1.8.0.0\lib\net45\ClientDependency.Core.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="cms, Version=1.0.5675.23468, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\UmbracoCms.Core.7.2.8\lib\cms.dll</HintPath>
+    </Reference>
+    <Reference Include="controls, Version=1.0.5675.23470, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\UmbracoCms.Core.7.2.8\lib\controls.dll</HintPath>
+    </Reference>
+    <Reference Include="CookComputing.XmlRpcV2">
+      <HintPath>..\packages\xmlrpcnet.2.5.0\lib\net20\CookComputing.XmlRpcV2.dll</HintPath>
+    </Reference>
+    <Reference Include="Examine, Version=0.1.65.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Examine.0.1.65.0\lib\Examine.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.6\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageProcessor">
+      <HintPath>..\packages\ImageProcessor.1.9.5.0\lib\ImageProcessor.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageProcessor.Web">
+      <HintPath>..\packages\ImageProcessor.Web.3.3.1.0\lib\net45\ImageProcessor.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="interfaces, Version=1.0.5675.23466, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\UmbracoCms.Core.7.2.8\lib\interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\UmbracoCms.Core.7.2.8\lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net">
+      <HintPath>..\packages\Lucene.Net.2.9.4.1\lib\net40\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.Data, Version=1.0.1559.20655, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\UmbracoCms.Core.7.2.8\lib\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.1\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="MiniProfiler">
+      <HintPath>..\packages\MiniProfiler.2.1.0\lib\net40\MiniProfiler.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MySql.Data.6.9.7\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.5\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLCE4Umbraco, Version=1.0.5675.23469, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\UmbracoCms.Core.7.2.8\lib\SQLCE4Umbraco.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\UmbracoCms.Core.7.2.8\lib\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe.Entity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\UmbracoCms.Core.7.2.8\lib\System.Data.SqlServerCe.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.30506.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.30506.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20710.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="TidyNet, Version=1.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\UmbracoCms.Core.7.2.8\lib\TidyNet.dll</HintPath>
+    </Reference>
+    <Reference Include="umbraco, Version=1.0.5675.23471, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\UmbracoCms.Core.7.2.8\lib\umbraco.dll</HintPath>
+    </Reference>
+    <Reference Include="Umbraco.Core, Version=1.0.5675.23466, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\UmbracoCms.Core.7.2.8\lib\Umbraco.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="umbraco.DataLayer, Version=1.0.5675.23468, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\UmbracoCms.Core.7.2.8\lib\umbraco.DataLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="umbraco.editorControls, Version=1.0.5675.23472, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\UmbracoCms.Core.7.2.8\lib\umbraco.editorControls.dll</HintPath>
+    </Reference>
+    <Reference Include="umbraco.MacroEngines, Version=1.0.5675.23472, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\UmbracoCms.Core.7.2.8\lib\umbraco.MacroEngines.dll</HintPath>
+    </Reference>
+    <Reference Include="umbraco.providers, Version=1.0.5675.23470, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\UmbracoCms.Core.7.2.8\lib\umbraco.providers.dll</HintPath>
+    </Reference>
+    <Reference Include="Umbraco.Web.UI, Version=1.0.5675.23473, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\UmbracoCms.Core.7.2.8\lib\Umbraco.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UmbracoExamine, Version=0.7.0.23469, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\UmbracoCms.Core.7.2.8\lib\UmbracoExamine.dll</HintPath>
+    </Reference>
+    <Reference Include="UrlRewritingNet.UrlRewriter, Version=2.0.60829.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\UmbracoCms.Core.7.2.8\lib\UrlRewritingNet.UrlRewriter.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Code\ezSearchBoostrapper.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="Code\EmailHelper.cs" />
+    <Compile Include="Controllers\SqlQueryController.cs" />
+    <Compile Include="Controllers\SubscribeController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\AboutUsController.cs" />
+    <Compile Include="Controllers\ContactSurfaceController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SurfaceControllers\AuthSurfaceController.cs" />
+    <Compile Include="Controllers\SurfaceControllers\ProfileSurfaceController.cs" />
+    <Compile Include="Controllers\TextPageController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AboutUsModel.cs" />
+    <Compile Include="Models\AuthViewModels.cs" />
+    <Compile Include="Models\ContactModel.cs" />
+    <Compile Include="Models\HomeModel.cs" />
+    <Compile Include="Models\ProfileModels.cs" />
+    <Compile Include="Models\SqlQuery.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SqlQuery.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SqlQueryModel.cs" />
+    <Compile Include="Models\SubscribeModel.cs" />
+    <Compile Include="Models\TextPageModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\cache\0\b\2\3\f\0\0b23f0527f728dbc75e2348ef78e326046eba0a3.png" />
+    <Content Include="App_Data\cache\0\c\7\4\1\7\0c74178b6c5e8f13ad84ff5141357aa759248edd.png" />
+    <Content Include="App_Data\cache\0\f\f\3\c\6\0ff3c6cd9d293cff562ffa057d4b1ad49d8a0754.png" />
+    <Content Include="App_Data\cache\1\7\e\0\2\3\17e023391f9910748df93c2834ad46bf7f9439c5.png" />
+    <Content Include="App_Data\cache\2\a\a\b\d\f\2aabdf09ccc87a949f26839a4d676b7adeb6b601.jpg" />
+    <Content Include="App_Data\cache\3\1\7\b\e\8\317be86b40e7e8e93d922107890a1fc1957c4b9a.png" />
+    <Content Include="App_Data\cache\3\2\9\5\1\e\32951e1d1b5d4aa73d27b31d799ac5bc6f305d7a.png" />
+    <Content Include="App_Data\cache\3\3\a\8\9\b\33a89bd20a64f89204ef5c17e5ba08aba6bd902b.png" />
+    <Content Include="App_Data\cache\3\8\1\c\2\6\381c260243a52daf15235e682aeb782501d7fdd4.png" />
+    <Content Include="App_Data\cache\4\3\f\3\b\e\43f3bea0ebf678c64609f39b6d04b6f2dd9c4791.png" />
+    <Content Include="App_Data\cache\6\b\7\0\1\e\6b701e059b5283a63ab696c5fa540bdbd0e89f32.png" />
+    <Content Include="App_Data\cache\7\b\3\2\4\b\7b324b681d4a179a76e06204f0fed424615f9b8b.png" />
+    <Content Include="App_Data\cache\8\8\c\2\0\b\88c20b6444986961c8ac46c17afff9d711491fa9.jpg" />
+    <Content Include="App_Data\cache\9\c\b\4\e\2\9cb4e25856f8c31dfc5edeeef1fefe466f8e6590.png" />
+    <Content Include="App_Data\cache\a\0\e\0\1\d\a0e01d8802dd46739be083557ec1f94381dd5c2f.jpg" />
+    <Content Include="App_Data\cache\a\8\a\6\c\c\a8a6cc2bb1c49196014a2a78fcbab3d13ad0d00c.png" />
+    <Content Include="App_Data\cache\a\c\7\5\7\6\ac75766c109e860b2351aa6822d012e096d0f35f.jpg" />
+    <Content Include="App_Data\cache\b\f\e\9\e\d\bfe9edb610afa065241a4f0ddd8b5fb863e8b6a7.png" />
+    <Content Include="App_Data\cache\f\6\b\0\7\7\f6b077cd0cef17f6ecd295e263104e7dd77ebe81.jpg" />
+    <Content Include="App_Data\cache\f\8\0\0\2\0\f800200c50b45e52410304c54e10af58ae449388.png" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt" />
+    <Content Include="App_Data\NuGetBackup\20141231-190937\Config\grid.editors.config.js" />
+    <Content Include="App_Data\TEMP\ClientDependency\BEAVER-PC-1a1eecef2e745736a1455c3f7034c172-map.xml" />
+    <Content Include="App_Data\TEMP\ClientDependency\BEAVER-PC-53baf3df9c8be1b9a39d5b73f1f9888c-map.xml" />
+    <Content Include="App_Data\TEMP\ClientDependency\BEAVER-PC-8beed04f9220b0b082296b2cb0ec51ee-map.xml" />
+    <Content Include="App_Data\UmbracoDB.mdf" />
+    <Content Include="App_Data\UmbracoDB_log.ldf">
+      <DependentUpon>UmbracoDB.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Plugins\Articulate\Assets\md-editor.css" />
+    <Content Include="App_Plugins\Articulate\Assets\md-editor.js" />
+    <Content Include="App_Plugins\Articulate\BackOffice\Dashboards\blogimporter.controller.js" />
+    <Content Include="App_Plugins\Articulate\BackOffice\Dashboards\blogimporter.html" />
+    <Content Include="App_Plugins\Articulate\BackOffice\Installer.ascx" />
+    <Content Include="App_Plugins\Articulate\BackOffice\PropertyEditors\themepicker.controller.js" />
+    <Content Include="App_Plugins\Articulate\BackOffice\PropertyEditors\ThemePicker.html" />
+    <Content Include="App_Plugins\Articulate\Themes\Edictum\Assets\css\normalize.css" />
+    <Content Include="App_Plugins\Articulate\Themes\Edictum\Assets\css\style.css" />
+    <Content Include="App_Plugins\Articulate\Themes\Edictum\Assets\js\modernizr.js" />
+    <Content Include="App_Plugins\Articulate\Themes\Mini\Assets\css\base.css" />
+    <Content Include="App_Plugins\Articulate\Themes\Mini\Assets\css\style.css" />
+    <Content Include="App_Plugins\Articulate\Themes\Phantom\Assets\css\normalize.css" />
+    <Content Include="App_Plugins\Articulate\Themes\Phantom\Assets\css\site.css" />
+    <Content Include="App_Plugins\Articulate\Themes\Phantom\Assets\fonts\phantom.svg" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Assets\css\responsive.min.css" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Assets\css\style.css" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Assets\img\author.gif" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Assets\img\background.png" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Assets\img\bg70.png" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Assets\img\bg80.png" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Assets\img\bgcode.gif" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Assets\img\comments.gif" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Assets\img\favicon.ico" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Assets\img\frogMini.png" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Assets\img\li.gif" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Assets\img\nav_li.gif" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Assets\img\quote.gif" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Assets\img\timeicon.gif" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Assets\js\responsive.ie10mobilefix.min.js" />
+    <Content Include="App_Plugins\Articulate\Themes\OPCustomTheme\Assets\css\normalize.css" />
+    <Content Include="App_Plugins\Articulate\Themes\OPCustomTheme\Assets\css\screen.css" />
+    <Content Include="App_Plugins\Articulate\Themes\OPCustomTheme\Assets\fonts\icons.svg" />
+    <Content Include="App_Plugins\Articulate\Themes\VAPOR\Assets\css\normalize.css" />
+    <Content Include="App_Plugins\Articulate\Themes\VAPOR\Assets\css\screen.css" />
+    <Content Include="App_Plugins\Articulate\Themes\VAPOR\Assets\fonts\icons.svg" />
+    <Content Include="App_Plugins\dummy.txt" />
+    <Content Include="config\grid.editors.config.js" />
+    <Content Include="Content\css\jquery.qtip.css" />
+    <Content Include="Content\css\owl.carousel.css" />
+    <Content Include="Content\css\owl.theme.css" />
+    <Content Include="Content\css\owl.transitions.css" />
+    <Content Include="Content\css\styles.css" />
+    <Content Include="Content\images\chrome.png" />
+    <Content Include="Content\images\facebook.png" />
+    <Content Include="Content\images\firefox.png" />
+    <Content Include="Content\images\hidemobileicon.png" />
+    <Content Include="Content\images\ie.png" />
+    <Content Include="Content\images\leftsmark.png" />
+    <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\navarrow.png" />
+    <Content Include="Content\images\opera.png" />
+    <Content Include="Content\images\pagination.png" />
+    <Content Include="Content\images\paginationcontact.png" />
+    <Content Include="Content\images\Product1.jpg" />
+    <Content Include="Content\images\Product2.jpg" />
+    <Content Include="Content\images\product3.jpg" />
+    <Content Include="Content\images\product4.jpg" />
+    <Content Include="Content\images\rightsmark.png" />
+    <Content Include="Content\images\safari.png" />
+    <Content Include="Content\images\search.png" />
+    <Content Include="Content\images\search2.png" />
+    <Content Include="Content\images\service1.jpg" />
+    <Content Include="Content\images\service2.jpg" />
+    <Content Include="Content\images\service3.jpg" />
+    <Content Include="Content\images\service4.jpg" />
+    <Content Include="Content\images\showmobileicon.png" />
+    <Content Include="Content\images\showtab.png" />
+    <Content Include="Content\images\slide1.jpg" />
+    <Content Include="Content\images\slide1_978px.jpg" />
+    <Content Include="Content\images\slide2.jpg" />
+    <Content Include="Content\images\slide2_978px.jpg" />
+    <Content Include="Content\images\slide3.jpg" />
+    <Content Include="Content\images\slide3_978px.jpg" />
+    <Content Include="Content\images\twitter.png" />
+    <Content Include="Content\images\youtube.png" />
+    <Content Include="Content\Static\css\jquery.jscrollpane.css" />
+    <Content Include="Content\Static\css\owl.carousel.css" />
+    <Content Include="Content\Static\css\owl.theme.css" />
+    <Content Include="Content\Static\css\owl.transitions.css" />
+    <Content Include="Content\Static\css\style.css" />
+    <Content Include="Content\Static\images\chrome.png" />
+    <Content Include="Content\Static\images\Facebookicon.png" />
+    <Content Include="Content\Static\images\firefox.png" />
+    <Content Include="Content\Static\images\ie.png" />
+    <Content Include="Content\Static\images\leftarrow.png" />
+    <Content Include="Content\Static\images\login.png" />
+    <Content Include="Content\Static\images\loginactive.png" />
+    <Content Include="Content\Static\images\loginhover.png" />
+    <Content Include="Content\Static\images\logo.png" />
+    <Content Include="Content\Static\images\opera.png" />
+    <Content Include="Content\Static\images\paginationcontact.png" />
+    <Content Include="Content\Static\images\product1.jpg" />
+    <Content Include="Content\Static\images\product2.jpg" />
+    <Content Include="Content\Static\images\product3.jpg" />
+    <Content Include="Content\Static\images\product4.jpg" />
+    <Content Include="Content\Static\images\product5.jpg" />
+    <Content Include="Content\Static\images\product6.jpg" />
+    <Content Include="Content\Static\images\product7.jpg" />
+    <Content Include="Content\Static\images\product8.jpg" />
+    <Content Include="Content\Static\images\rightarrow.png" />
+    <Content Include="Content\Static\images\safari.png" />
+    <Content Include="Content\Static\images\search.png" />
+    <Content Include="Content\Static\images\slide1.png" />
+    <Content Include="Content\Static\images\slide1sync.png" />
+    <Content Include="Content\Static\images\slide2.png" />
+    <Content Include="Content\Static\images\slide2sync.png" />
+    <Content Include="Content\Static\images\slide3.png" />
+    <Content Include="Content\Static\images\slide3sync.png" />
+    <Content Include="Content\Static\images\slide4.png" />
+    <Content Include="Content\Static\images\slide4sync.png" />
+    <Content Include="Content\Static\images\slide5.png" />
+    <Content Include="Content\Static\images\slide5sync.png" />
+    <Content Include="Content\Static\images\slide6.png" />
+    <Content Include="Content\Static\images\slide6sync.png" />
+    <Content Include="Content\Static\images\slide7.png" />
+    <Content Include="Content\Static\images\slide7sync.png" />
+    <Content Include="Content\Static\images\slide8.png" />
+    <Content Include="Content\Static\images\slide8sync.png" />
+    <Content Include="Content\Static\images\Twittericon.png" />
+    <Content Include="Content\Static\images\Youtubeicon.png" />
+    <Content Include="default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="packages.config" />
+    <Content Include="Scripts\additional-methods.min.js" />
+    <Content Include="Scripts\DialogForm.js" />
+    <Content Include="Scripts\html5shiv.js" />
+    <Content Include="App_Plugins\Articulate\package.manifest" />
+    <Content Include="App_Plugins\Articulate\Themes\Edictum\Views\List.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Edictum\Views\Master.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Edictum\Views\Partials\Header.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Edictum\Views\Partials\Pager.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Edictum\Views\Partials\PostTags.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Edictum\Views\Post.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Edictum\Views\Web.config" />
+    <Content Include="App_Plugins\Articulate\Themes\Mini\Views\List.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Mini\Views\Master.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Mini\Views\Partials\CommentsDisqus.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Mini\Views\Partials\CommentsFacebook.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Mini\Views\Partials\CommentsGooglePlus.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Mini\Views\Partials\Footer.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Mini\Views\Partials\Header.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Mini\Views\Partials\Menu.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Mini\Views\Partials\Pager.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Mini\Views\Partials\PostTags.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Mini\Views\Partials\Share.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Mini\Views\Post.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Mini\Views\Web.config" />
+    <Content Include="App_Plugins\Articulate\Themes\Phantom\Assets\fonts\config.json" />
+    <Content Include="App_Plugins\Articulate\Themes\Phantom\Assets\fonts\phantom.eot" />
+    <Content Include="App_Plugins\Articulate\Themes\Phantom\Assets\fonts\phantom.ttf" />
+    <Content Include="App_Plugins\Articulate\Themes\Phantom\Assets\fonts\phantom.woff" />
+    <Content Include="App_Plugins\Articulate\Themes\Phantom\Views\List.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Phantom\Views\Master.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Phantom\Views\Partials\CommentsDisqus.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Phantom\Views\Partials\CommentsFacebook.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Phantom\Views\Partials\CommentsGooglePlus.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Phantom\Views\Partials\Menu.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Phantom\Views\Partials\Pager.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Phantom\Views\Partials\PostTags.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Phantom\Views\Partials\SearchBox.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Phantom\Views\Partials\Sidebar.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Phantom\Views\Post.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Phantom\Views\Web.config" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Views\List.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Views\Master.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Views\Partials\Categories.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Views\Partials\CommentsDisqus.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Views\Partials\CommentsFacebook.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Views\Partials\CommentsGooglePlus.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Views\Partials\FeedDelicious.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Views\Partials\FeedGitHub.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Views\Partials\Follow.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Views\Partials\Menu.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Views\Partials\Pager.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Views\Partials\Post.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Views\Partials\PostTags.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Views\Partials\Recent.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Views\Partials\SearchBox.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Views\Partials\Sharing.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Views\Partials\SideWidgets.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Views\Partials\TagCloud.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Views\Post.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Views\Tags.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\Shazwazza\Views\Web.config" />
+    <Content Include="App_Plugins\Articulate\Themes\VAPOR\Assets\fonts\icons.eot" />
+    <Content Include="App_Plugins\Articulate\Themes\VAPOR\Assets\fonts\icons.ttf" />
+    <Content Include="App_Plugins\Articulate\Themes\VAPOR\Assets\fonts\icons.woff" />
+    <Content Include="App_Plugins\Articulate\Themes\VAPOR\Views\List.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\VAPOR\Views\Master.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\VAPOR\Views\Partials\CommentsDisqus.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\VAPOR\Views\Partials\CommentsFacebook.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\VAPOR\Views\Partials\CommentsGooglePlus.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\VAPOR\Views\Partials\FooterDescription.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\VAPOR\Views\Partials\HeaderDescription.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\VAPOR\Views\Partials\Menu.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\VAPOR\Views\Partials\Pager.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\VAPOR\Views\Partials\PostTags.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\VAPOR\Views\Partials\SearchBox.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\VAPOR\Views\Post.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\VAPOR\Views\Tags.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\VAPOR\Views\Web.config" />
+    <Content Include="App_Plugins\Articulate\Views\MarkdownEditor.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="App_Plugins\Articulate\Views\Web.config" />
+    <Content Include="App_Plugins\Articulate\Themes\OPCustomTheme\Assets\fonts\icons.eot" />
+    <Content Include="App_Plugins\Articulate\Themes\OPCustomTheme\Assets\fonts\icons.ttf" />
+    <Content Include="App_Plugins\Articulate\Themes\OPCustomTheme\Assets\fonts\icons.woff" />
+    <Content Include="App_Plugins\Articulate\Themes\OPCustomTheme\Views\List.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\OPCustomTheme\Views\Master.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\OPCustomTheme\Views\Partials\CommentsDisqus.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\OPCustomTheme\Views\Partials\CommentsFacebook.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\OPCustomTheme\Views\Partials\CommentsGooglePlus.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\OPCustomTheme\Views\Partials\FooterDescription.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\OPCustomTheme\Views\Partials\HeaderDescription.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\OPCustomTheme\Views\Partials\Menu.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\OPCustomTheme\Views\Partials\Pager.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\OPCustomTheme\Views\Partials\PostTags.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\OPCustomTheme\Views\Partials\SearchBox.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\OPCustomTheme\Views\Post.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\OPCustomTheme\Views\Tags.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\OPCustomTheme\Views\Web.config" />
+    <Content Include="App_Plugins\Articulate\Themes\OPCustomTheme\Views\Partials\Tags.cshtml" />
+    <Content Include="App_Plugins\Articulate\Themes\OPCustomTheme\Views\Partials\Recent.cshtml" />
+    <Content Include="App_Data\access.config" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2014-12-31" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-01-07" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-01-08" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-01-09" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-01-15" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-01-16" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-01-19" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-01-20" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-01-22" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-01-25" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-01-26" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-01-27" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-01-28" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-01-29" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-02-02" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-02-03" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-02-04" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-02-05" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-02-06" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-02-09" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-02-11" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-02-12" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-02-16" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-02-17" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-02-19" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-02-23" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-02-25" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-03-02" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-03-03" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-03-04" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-03-25" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-03-26" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-04-24" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-04-26" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-04-27" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-04-28" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-04-29" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-05-01" />
+    <Content Include="App_Data\Logs\UmbracoTraceLog.txt.2015-05-03" />
+    <Content Include="App_Data\NuGetBackup\20141231-190935\CopyLogs\UmbracoBinBackup.log" />
+    <Content Include="App_Data\NuGetBackup\20141231-190937\Config\404handlers.config" />
+    <Content Include="App_Data\NuGetBackup\20141231-190937\Config\applications.config" />
+    <Content Include="App_Data\NuGetBackup\20141231-190937\Config\BaseRestExtensions.config" />
+    <Content Include="App_Data\NuGetBackup\20141231-190937\Config\ClientDependency.config" />
+    <Content Include="App_Data\NuGetBackup\20141231-190937\Config\Dashboard.config" />
+    <Content Include="App_Data\NuGetBackup\20141231-190937\Config\EmbeddedMedia.config" />
+    <Content Include="App_Data\NuGetBackup\20141231-190937\Config\ExamineIndex.config" />
+    <Content Include="App_Data\NuGetBackup\20141231-190937\Config\ExamineSettings.config" />
+    <Content Include="App_Data\NuGetBackup\20141231-190937\Config\feedProxy.config" />
+    <Content Include="App_Data\NuGetBackup\20141231-190937\Config\FileSystemProviders.config" />
+    <Content Include="App_Data\NuGetBackup\20141231-190937\Config\log4net.config" />
+    <Content Include="App_Data\NuGetBackup\20141231-190937\Config\metablogConfig.config" />
+    <Content Include="App_Data\NuGetBackup\20141231-190937\Config\scripting.config" />
+    <Content Include="App_Data\NuGetBackup\20141231-190937\Config\tinyMceConfig.config" />
+    <Content Include="App_Data\NuGetBackup\20141231-190937\Config\trees.config" />
+    <Content Include="App_Data\NuGetBackup\20141231-190937\Config\umbracoSettings.config" />
+    <Content Include="App_Data\NuGetBackup\20141231-190937\Config\UrlRewriting.config" />
+    <Content Include="App_Data\NuGetBackup\20141231-190937\CopyLogs\ConfigBackup.log" />
+    <Content Include="App_Data\NuGetBackup\20141231-190937\Web.config" />
+    <Content Include="App_Data\packages\created\createdPackages.config" />
+    <Content Include="App_Data\packages\installed\installedPackages.config" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\segments.gen" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\segments_8r" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_6t.fdt" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_6t.fdx" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_6t.fnm" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_6t.frq" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_6t.nrm" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_6t.prx" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_6t.tii" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_6t.tis" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_6t.tvd" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_6t.tvf" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_6t.tvx" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_6t_6.del" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_6u.cfs" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_6u_1.del" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_6v.cfs" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_6w.cfs" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_6w_1.del" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_6x.cfs" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_6x_1.del" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_6y.cfs" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_6y_1.del" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\External\Index\_6z.cfs" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\segments.gen" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\segments_3e" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\_2g.fdt" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\_2g.fdx" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\_2g.fnm" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\_2g.frq" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\_2g.nrm" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\_2g.prx" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\_2g.tii" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\_2g.tis" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\_2g.tvd" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\_2g.tvf" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\_2g.tvx" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\_2g_1.del" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\_2h.cfs" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\_2h_1.del" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\_2i.cfs" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\_2i_1.del" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\_2j.cfs" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\_2j_1.del" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\_2k.cfs" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\_2k_1.del" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\_2l.cfs" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\_2l_1.del" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\_2m.cfs" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\_2m_1.del" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\InternalMember\Index\_2n.cfs" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\segments.gen" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\segments_83" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_7p.fdt" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_7p.fdx" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_7p.fnm" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_7p.frq" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_7p.nrm" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_7p.prx" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_7p.tii" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_7p.tis" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_7p.tvd" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_7p.tvf" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_7p.tvx" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_7p_2.del" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_7q.cfs" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_7q_1.del" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_7r.cfs" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_7r_1.del" />
+    <Content Include="App_Data\TEMP\ExamineIndexes\Internal\Index\_7s.cfs" />
+    <Content Include="App_Data\TEMP\PluginCache\umbraco-plugins.BEAVER-PC.hash" />
+    <Content Include="App_Data\TEMP\PluginCache\umbraco-plugins.BEAVER-PC.list" />
+    <Content Include="App_Data\umbraco.config" />
+    <Content Include="Models\SqlQuery.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>SqlQuery.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="config\UrlRewriting.config" />
+    <Content Include="config\trees.config" />
+    <Content Include="config\tinyMceConfig.config" />
+    <Content Include="config\scripting.config" />
+    <Content Include="config\metablogConfig.config" />
+    <Content Include="config\log4net.config" />
+    <Content Include="config\FileSystemProviders.config" />
+    <Content Include="config\feedProxy.config" />
+    <Content Include="config\EmbeddedMedia.config" />
+    <Content Include="config\BaseRestExtensions.config" />
+    <Content Include="config\applications.config" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-1.11.1.min.js" />
+    <Content Include="Scripts\jquery.cookie.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\Responsive\equalheight.min.js" />
+    <Content Include="Scripts\Responsive\owl.carousel.min.js" />
+    <Content Include="Scripts\Responsive\slideandprogressbar.js" />
+    <Content Include="Scripts\Responsive\slideandprogressbar.min.js" />
+    <Content Include="Scripts\selectivizr.min.js" />
+    <Content Include="Scripts\Static\jquery.jscrollpane.min.js" />
+    <Content Include="Scripts\Static\jquery.mousewheel.min.js" />
+    <Content Include="Scripts\Static\jquery.scrollmagic.min.js" />
+    <Content Include="Scripts\Static\owl.carousel.min.js" />
+    <Content Include="Scripts\Static\slidesyncandprogressbar.min.js" />
+    <Content Include="Scripts\Static\TweenMax.min.js" />
+    <Content Include="Scripts\Static\waypoints-sticky.min.js" />
+    <Content Include="Scripts\Static\waypoints.min.js" />
+    <None Include="Scripts\_references.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="config\umbracoSettings.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="config\ExamineSettings.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="config\ExamineIndex.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="config\Dashboard.config" />
+    <Content Include="config\ClientDependency.config" />
+    <Content Include="config\404handlers.config" />
+    <Content Include="Views\Contact.cshtml" />
+    <Content Include="Views\Cookies.cshtml" />
+    <Content Include="Views\Home.cshtml" />
+    <Content Include="Views\Static.cshtml" />
+    <Content Include="Views\_Layout.cshtml" />
+    <Content Include="Views\Partials\ContactForm.cshtml" />
+    <Content Include="Views\Partials\SubscribeForm.cshtml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Register.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Subscribe.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\MacroPartials\ezSearch.cshtml" />
+    <Content Include="Views\Search.cshtml" />
+    <Content Include="Views\Umb_AboutUs.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\AuthSurface\ForgottenPasswordForm.cshtml" />
+    <Content Include="Views\AuthSurface\LoginForm.cshtml" />
+    <Content Include="Views\AuthSurface\RegisterForm.cshtml" />
+    <Content Include="Views\AuthSurface\ResetPasswordForm.cshtml" />
+    <Content Include="Views\AuthSurface\VerifyEmail.cshtml" />
+    <Content Include="Views\ProfileSurface\EditProfile.cshtml" />
+    <Content Include="Views\Partials\Register.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Login.cshtml" />
+    <Content Include="Views\VerifyEmail.cshtml" />
+    <Content Include="Views\Partials\LoginStatus.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\ForgottenPassword.cshtml" />
+    <Content Include="Views\ResetPassword.cshtml" />
+    <Content Include="Views\Profile.cshtml" />
+    <Content Include="Views\error404.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Media.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Macro.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Embed.cshtml" />
+    <Content Include="Views\Partials\Grid\Editors\Base.cshtml" />
+    <Content Include="Views\Partials\Grid\Bootstrap3.cshtml" />
+    <Content Include="Views\Partials\Grid\Bootstrap2.cshtml" />
+    <Content Include="Views\Umb_SqlQuery.cshtml" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <Content Include="xslt\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\NuGetBackup\20141231-190935\bin\" />
+    <Folder Include="App_Data\preview\" />
+    <Folder Include="App_Data\TEMP\FileUploads\" />
+    <Folder Include="App_Data\TEMP\Install\" />
+    <Folder Include="media\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models\SqlQuery.dbml.layout">
+      <DependentUpon>SqlQuery.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4083</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:4083/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\UmbracoCms.7.2.8\build\UmbracoCms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\UmbracoCms.7.2.8\build\UmbracoCms.props'))" />
+    <Error Condition="!Exists('..\packages\UmbracoCms.7.2.8\build\UmbracoCms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\UmbracoCms.7.2.8\build\UmbracoCms.targets'))" />
+  </Target>
+  <Import Project="..\packages\UmbracoCms.7.2.8\build\UmbracoCms.targets" Condition="Exists('..\packages\UmbracoCms.7.2.8\build\UmbracoCms.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

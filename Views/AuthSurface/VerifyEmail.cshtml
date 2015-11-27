@@ -1,0 +1,29 @@
+﻿@using System.Web.Mvc
+@using System.Web.Mvc.Html
+@using Umbraco.Web
+@using MvcUmbraco.Models
+@using MvcUmbraco.Controllers.SurfaceControllers
+@model ResetPasswordViewModel
+
+<div class="onepcssgrid-1200">
+    <div class="onerow">
+        <div class="col8">
+            <section id="sectionPadding">
+                @if (Convert.ToBoolean(TempData["IsSuccessful"]))
+                {
+                    <div class="alert alert-success">
+                        <h3>Email Verified!</h3>
+                        <p>@Html.Raw("We have now verified your email address and you can now <a href='/login' class='alert-link'>login</a>")</p>
+                    </div>
+                }
+                else
+                {
+                    <div class="alert alert-danger">
+                        <h3>Email verification unsuccessful</h3>
+                        <p>Unfortunately we was unable to verify you with those details, please try again</p>
+                    </div>
+                }
+            </section>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+﻿@using System.Web.Mvc
+@using System.Web.Mvc.Html
+@using Umbraco.Web
+@using MvcUmbraco.Controllers.SurfaceControllers
+@using MvcUmbraco.Models
+@model LoginViewModel
+@{
+    Html.EnableClientValidation(true);
+    Html.EnableUnobtrusiveJavaScript(true);
+}
+<div class="onepcssgrid-1200">
+    <div class="onerow">
+        <div class="col8">
+            <section id="loginForm">
+                @if (!ViewData.ModelState.IsValid)
+                {                        
+                    foreach (ModelState modelState in ViewData.ModelState.Values)
+                {
+                    var errors = modelState.Errors;
+
+                    if (errors.Any())
+                    {
+                        <ul>
+                            @foreach (ModelError error in errors)
+                            {
+                                <li><div class="submitfailed"><h2>@error.ErrorMessage</h2></div></li>
+                            }
+                        </ul>
+                    }
+                }
+                    <div class="alert alert-danger">
+                        <p>
+                            Forgotten your password? @Html.Raw("Follow the link to <a href='/forgotten-password' class='alert-link'>recover your password</a>.")
+                        </p>
+
+                    </div>
+                }
+
+                @using (Html.BeginUmbracoForm<AuthSurfaceController>("HandleLogin"))
+                {
+                    @Html.AntiForgeryToken()
+                <h3>Sign in with your email address</h3>
+                <hr />
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.EmailAddress, "Email address", new { @class = "control-label" })
+                            @Html.TextBoxFor(model => model.EmailAddress, new { @class = "form-control", placeholder = "" })
+                            @Html.ValidationMessageFor(model => model.EmailAddress, string.Empty, new { @class = "help-block" })
+                        </div>
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Password, "Password", new { @class = "control-label" })
+                            @Html.PasswordFor(model => model.Password, new { @class = "form-control", placeholder = "" })
+                            @Html.ValidationMessageFor(model => model.Password, string.Empty, new { @class = "help-block" })
+                        </div>
+                        @Html.HiddenFor(Model => Model.ReturnUrl)
+                        <button type="submit" class="btn btn-default">Login</button>
+
+                }
+            </section>
+        </div>
+    </div>
+</div>

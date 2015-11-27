@@ -1,0 +1,131 @@
+@using Articulate
+@using Articulate.Models
+@using Umbraco.Core
+@using Umbraco.Web
+@using System.Linq
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<Articulate.Models.ListModel>
+
+@{
+    Layout = "Master.cshtml";   
+}
+
+<div class="onepcssgrid-1200">
+    <div class="onerow">
+        <main class="archive" role="main">
+            <div class="col8">
+
+                @if (!Model.Children.Any())
+                {
+                    <article>No blog posts found</article>
+                }
+                else
+                {
+                    foreach (var post in Model.Children<PostModel>())
+                    {
+                        <div class="article_border">
+                            <article>
+                                <div class="article_title_bar">
+                                    <h1 class="post-title"><a href="@post.Url">@post.Name</a></h1>
+
+                                    <div class="postby_date_box">
+                                        <span>
+                                            Posted by <span class="postby_author">
+                                                <!-- Author Name -->
+                                                @if (!post.Author.Url.IsNullOrWhiteSpace())
+                                                {
+                                                    <a href="@post.Author.Url">@post.Author.Name</a>
+                                                }
+                                                else
+                                                {
+                                                    @post.Author.Name
+                                                }
+                                            </span> on
+                                        </span>
+                                        <!-- Date Format e.g 23 February 2015 - 05:42pm -->
+                                        <time datetime="@post.PublishedDate.ToString("yyyy-MM-dd")">
+                                            @post.PublishedDate.ToString("dd MMMM yyyy - hh:mm tt")
+                                        </time>
+                                    </div>
+                                </div>
+
+                                <section class="article_content">
+                                    <p>
+                                        @post.Body
+                                    </p>
+                                </section>
+                                <div class="comment_count_box">
+                                    <p><a href="@post.Url#disqus_thread" data-disqus-identifier="@post.Id"></a></p>
+                                </div>
+                            </article>
+                        </div>
+                    }
+
+                    @Html.ThemedPartial(Model, "Pager", Model.Pages)
+                }
+            </div>
+            <div class="col4 last">
+                <div class="archivemenuborder">
+                    <h2 class="archivemenuheader">Archive Menu</h2>
+                    @{
+                        // From Root, order by published date by year and month
+                        // desc = descending
+                        var nestedGroups = from p in Umbraco.TypedContentAtRoot().DescendantsOrSelf("ArticulateMarkdown").OrderBy("publishedDate desc")
+                                           group p by p.GetPropertyValue<DateTime>("publishedDate").Year into yg
+                                           select new
+                                           {
+                                               Year = yg.Key,
+                                               Months = from o in yg
+                                                        group o by o.GetPropertyValue<DateTime>("publishedDate").Month into mg
+                                                        select new
+                                                            {
+                                                                Month = mg.Key,
+                                                                Items = mg.Select(x => x),
+                                                                Count = mg.Count()
+                                                            }
+                                           };
+
+                    }
+                    <ul class="archivemenubackground">
+                        @foreach (var groupedYear in nestedGroups)
+                        {
+                            <li class="archiveyear">@groupedYear.Year</li>
+   
+
+                            foreach (var groupedMonth in groupedYear.Months)
+                            {
+
+                                // Convert from Int Month to string Full Month Name
+                                int month = groupedMonth.Month;
+                                DateTime dtDate = new DateTime(2000, month, 1);
+                                string MonthFullName = dtDate.ToString("MMMM");
+                                // Month and Count
+                                <li class="archivemonth">@MonthFullName <span class="archivemonthbrackets">(<span class="archivemonthcount">@groupedMonth.Count</span>)</span></li>
+
+                                foreach (var newsItem in groupedMonth.Items)
+                                {
+                                    <li class="archivearticles"><a href="@newsItem.Url">@newsItem.Name</a></li>
+                                }
+                            }
+                        }
+                    </ul>
+
+                </div>
+            </div>
+            </main>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'oparr'; // required: replace example with your forum shortname
+
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function () {
+var s = document.createElement('script'); s.async = true;
+s.type = 'text/javascript';
+s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script> 
+

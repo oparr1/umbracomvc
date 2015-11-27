@@ -1,0 +1,115 @@
+@using Articulate
+@using Articulate.Models
+@using Umbraco.Core
+@using Umbraco.Web
+@model Articulate.Models.TagListModel
+@{
+    Layout = "Master.cshtml";
+    var asArray = Model.Tags.ToArray();
+
+}
+
+<main class="content" role="main">
+    <article>
+        <h1>@Model.Name</h1>
+        <ul>
+            @for (var i = 0; i < asArray.Length; i++)
+            {
+                <li>
+                    <a href="#tag-@i">@asArray[i].TagName</a> - (@asArray[i].PostCount)
+                </li>
+            }
+        </ul>
+
+        <hr />
+        <p>HELLO</p>
+        <div class="tag-list">
+            @for (var i = 0; i < asArray.Length; i++)
+            {
+                <h2>
+                    <a href="@Url.ArticulateTagRssUrl(asArray[i])" class="fa fa-rss"><span>RSS</span></a>
+                    <a id="tag-@i" href="@asArray[i].TagUrl">@asArray[i].TagName</a>
+                </h2>
+
+                @Html.Table(
+                        asArray[i].Posts.OrderByDescending(x => x.PublishedDate),
+                        new[] { "Date", "Name" },
+                        new string[]{},
+                        @<span>@item.PublishedDate.ToString("yyyy-MMMM")</span>,
+                @<a href="@item.Url">@item.Name</a>)
+
+            }
+        </div>
+
+
+    </article>
+
+</main>
+@using System.Linq
+<div class="tag-list">
+    @for (var i = 0; i < asArray.Length; i++)
+    {
+        <h2>
+            <a href="@Url.ArticulateTagRssUrl(asArray[i])" class="fa fa-rss"><span>RSSrotfl!</span></a>
+            <a id="tag-@i" href="@asArray[i].TagUrl">@asArray[i].TagName</a>
+        </h2>
+
+        var grouped = (from p in asArray[i].Posts.OrderByDescending(x => x.PublishedDate)
+                       group p by new { month = p.PublishedDate.Month, year = p.PublishedDate.Year } into d
+                       select new { dt = string.Format("{0}/{1}", d.Key.month, d.Key.year), count = d.Count() }).OrderByDescending(g => g.dt);
+                                           
+                       
+         foreach (var groupedYear in grouped)
+         {
+             string year = groupedYear.dt;
+             
+             @groupedYear.count
+             @groupedYear.dt
+             
+         }
+    }
+
+</div>
+@for (var i = 0; i < asArray.Length; i++)
+{
+    var nestedGroups = from p in asArray[i].Posts.OrderBy(x => x.PublishedDate)
+                       group p by p.PublishedDate.Year into yg
+                       select new
+                       {
+                           Year = yg.Key,
+                           Months = from o in yg
+                                    group o by o.PublishedDate.Month into mg
+                                    select new
+                                    {
+                                        Month = mg.Key,
+                                        Items = mg.Select(x => x)
+                                    }
+                       };
+    
+    
+    <p>WHAT</p>
+    
+    foreach (var groupedYear in nestedGroups)
+    {
+        @groupedYear.Year
+
+        foreach (var groupedMonth in groupedYear.Months)
+        {          
+            @groupedMonth.Month
+
+            foreach (var newsItem in groupedMonth.Items)
+            {
+                @newsItem.Name
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+

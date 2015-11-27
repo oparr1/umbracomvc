@@ -1,0 +1,155 @@
+﻿@using MvcUmbraco.Models
+@inherits UmbracoViewPage<SqlQueryModel>
+    @{
+    Layout = "_Layout.cshtml";
+    }
+
+    <div class="onepcssgrid-1200">
+        <div class="onerow">
+            <div class="col12">
+                <section id="sqlqueries">
+                    <h1>SQL Query Magic</h1>
+                    <!-- One Value -->
+                    <h3>One Value</h3>
+                    <table>
+                        <tr>
+                            <td>
+                                @Model.oneValue
+                                </td>
+                            </tr>
+                        </table>
+                    <!-- One Row -->
+                    <h3>One Row - Selected 7 Columns</h3>
+                    <div class="scrollit">
+                        <table class="fluid_table">
+                            <tr>
+                                <th>Code</th><th>Country</th><th>Continent</th><th>Region</th><th>Surface Area</th><th>Population</th><th>Life Expectancy</th>
+                            </tr>
+
+                                    @foreach (var oneRow in Model.oneRow)
+                                    {
+                                        <tr>
+                                            <td>@oneRow.Code</td>
+                                            <td>@oneRow.Name</td>
+                                            <td>@oneRow.Continent</td>
+                                            <td>@oneRow.Region</td>
+                                            <td>@oneRow.SurfaceArea</td>
+                                            <td>@oneRow.Population</td>
+                                            <td>@oneRow.LifeExpectancy</td>
+                                        </tr>
+                                    }
+
+                        </table>
+                    </div>
+                    <!-- One Column -->
+                    <h3>One Column - First 20, Ascending Order</h3>
+                    <table>
+                        <tr><th><strong>Countries</strong></th></tr>
+
+                        @foreach (var oneColumn in Model.oneColumn)
+                        {
+                            <tr>
+                                <td>
+                                    @oneColumn.Name
+                                </td>
+                            </tr>
+                        }
+
+                    </table>
+
+                    <h3>Multiple Rows - Selected 7 Columns</h3>
+                    <div class='scrollit'>
+                    <table class='fluid_table'>
+                        <tr>
+                            <th>Code</th>
+                            <th>Country</th>
+                            <th>Continent</th>
+                            <th>Region</th>
+                            <th>Surface Area</th>
+                            <th>Population</th>
+                            <th>Life Expectancy</th>
+                        </tr>
+            @foreach (var multipleRows in Model.multipleRows)
+                                    {
+        <tr><td>@multipleRows.Code</td>
+            <td>@multipleRows.Name</td>
+            <td>@multipleRows.Continent</td>
+            <td> @multipleRows.Region</td>
+            <td> @multipleRows.SurfaceArea</td>
+            <td>@multipleRows.Population</td>
+            <td>@multipleRows.LifeExpectancy
+            </td></tr>
+            }
+                </table>
+                    </div>
+
+                    <!-- Aggregates -->
+                    <h3>Average Life Expectancy in Europe (2 decimal places)</h3>
+                    <table>
+                        <tr><th><strong>Average Life Expectancy in Europe</strong></th></tr>
+                        <tr>
+                            <td>
+                                @Model.aggregatesDecimal
+                            </td>
+                        </tr>
+
+                    </table>
+
+                    <!-- Group By -->
+                    <h3>Group By number of countries in each Region per Continent, Descending</h3>
+                    <table>
+                        <tr>
+                            <th>Continent</th>
+                            <th>Region</th>
+                            <th>Total number of countries</th>
+                        </tr>
+                        @foreach (var groupBy in Model.groupBy)
+                        {
+                            <tr>
+                                <td>@groupBy.Continent</td>
+                                <td>@groupBy.Region</td>
+                                <td>
+                                    @groupBy.Count
+                            </td>
+                        </tr>
+                        }
+                    </table>
+
+                    <!-- Join Table -->
+                    <h3>Join 2 Tables - Country and Official Languages in Europe</h3>
+                    <table>
+                        <tr>
+                            <th>Country</th>
+                            <th>Official Language(s)</th>
+                        </tr>
+                            
+                                @foreach (var joinTable in Model.joinTable)
+                                {
+                                    <tr>
+                                        <td>@joinTable.Name</td>
+                                        <td>@joinTable.Language</td>
+                                    </tr>
+                                }
+
+                    </table>
+
+                    <!-- Random List -->
+                    <h3>Random List on refresh (beginning with 'C')</h3>
+
+                    <table>
+                        <tr>
+                            <th>Country</th>
+                        </tr>
+                        @foreach (var randomOrder in Model.randomOrder)
+                        {
+                        <tr>
+                            <td>
+                         @randomOrder.Name
+                           </td>
+                        </tr>
+                        }
+                    </table>                   
+            </section>
+            </div>
+        </div>
+    </div>

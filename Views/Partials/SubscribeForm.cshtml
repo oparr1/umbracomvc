@@ -1,0 +1,17 @@
+﻿@using MvcUmbraco.Models
+@inherits UmbracoViewPage<SubscribeModel>
+
+@{
+    Layout = null;
+}
+
+<div class="tooltips">
+    @using (Html.BeginForm(null, null, FormMethod.Post, new { @action = "http://opwebapp.createsend.com/t/t/s/dilulh/", @id = "subscribeForm" }))
+    {
+
+        @Html.TextBoxFor(m => m.Email, new { @id = "subscribeEmail", @name = "cm-dilulh-dilulh", @placeholder = "Enter email address", @class = "required" })
+        @Html.ValidationMessageFor(m => m.Email)
+
+        <button id="subscribeButton" type="submit">Subscribe to Newsletter</button>
+    }
+</div>

@@ -1,0 +1,440 @@
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\MvcUmbraco.dll.config
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\MvcUmbraco.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\MvcUmbraco.pdb
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Antlr3.Runtime.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\AutoMapper.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\AutoMapper.Net4.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\businesslogic.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\ClientDependency.Core.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\ClientDependency.Core.Mvc.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\cms.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\controls.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\CookComputing.XmlRpcV2.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\EntityFramework.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Examine.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\HtmlAgilityPack.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\ICSharpCode.SharpZipLib.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\ImageProcessor.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\ImageProcessor.Web.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\interfaces.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\log4net.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Lucene.Net.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Microsoft.ApplicationBlocks.Data.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Microsoft.Web.Helpers.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Microsoft.Web.Infrastructure.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\MiniProfiler.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\MySql.Data.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Newtonsoft.Json.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\SQLCE4Umbraco.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Data.SqlServerCe.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Data.SqlServerCe.Entity.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Net.Http.Formatting.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Helpers.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Http.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Http.WebHost.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Mvc.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Optimization.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Providers.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Razor.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.WebPages.Deployment.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.WebPages.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.WebPages.Razor.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\TidyNet.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Umbraco.Core.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\umbraco.DataLayer.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\umbraco.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\umbraco.editorControls.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\umbraco.MacroEngines.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\umbraco.providers.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Umbraco.Web.UI.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\UmbracoExamine.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\UrlRewritingNet.UrlRewriter.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\WebGrease.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\AutoMapper.xml
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\businesslogic.xml
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\ClientDependency.Core.pdb
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\ClientDependency.Core.Mvc.pdb
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\cms.xml
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\controls.xml
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Examine.pdb
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\HtmlAgilityPack.pdb
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\HtmlAgilityPack.xml
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\interfaces.xml
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Lucene.Net.xml
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\MiniProfiler.pdb
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\MiniProfiler.xml
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Newtonsoft.Json.xml
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Net.Http.Formatting.xml
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Helpers.xml
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Http.xml
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Http.WebHost.xml
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Mvc.xml
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Razor.xml
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.WebPages.xml
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.WebPages.Deployment.xml
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.WebPages.Razor.xml
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\EntityFramework.xml
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\umbraco.xml
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Umbraco.Core.xml
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\umbraco.DataLayer.xml
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\umbraco.editorControls.xml
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\umbraco.MacroEngines.xml
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\umbraco.providers.xml
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\obj\Debug\MvcUmbraco.csprojResolveAssemblyReference.cache
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\obj\Debug\MvcUmbraco.dll
+C:\UmbracoTest\Backup\MvcUmbraco\MvcUmbraco\MvcUmbraco\obj\Debug\MvcUmbraco.pdb
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\MvcUmbraco.dll.config
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\MvcUmbraco.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\MvcUmbraco.pdb
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Antlr3.Runtime.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\AutoMapper.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\AutoMapper.Net4.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\businesslogic.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\ClientDependency.Core.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\ClientDependency.Core.Mvc.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\cms.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\controls.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\CookComputing.XmlRpcV2.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\EntityFramework.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Examine.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\HtmlAgilityPack.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\ICSharpCode.SharpZipLib.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\ImageProcessor.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\ImageProcessor.Web.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\interfaces.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\log4net.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Lucene.Net.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Microsoft.ApplicationBlocks.Data.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Microsoft.Web.Helpers.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Microsoft.Web.Infrastructure.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\MiniProfiler.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\MySql.Data.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Newtonsoft.Json.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\SQLCE4Umbraco.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Data.SqlServerCe.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Data.SqlServerCe.Entity.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Net.Http.Formatting.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Helpers.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Http.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Http.WebHost.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Mvc.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Optimization.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Providers.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Razor.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.WebPages.Deployment.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.WebPages.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.WebPages.Razor.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\TidyNet.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Umbraco.Core.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\umbraco.DataLayer.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\umbraco.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\umbraco.editorControls.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\umbraco.MacroEngines.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\umbraco.providers.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Umbraco.Web.UI.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\UmbracoExamine.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\UrlRewritingNet.UrlRewriter.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\WebGrease.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Antlr3.Runtime.pdb
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\AutoMapper.xml
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\businesslogic.xml
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\ClientDependency.Core.pdb
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\ClientDependency.Core.Mvc.pdb
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\cms.xml
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\controls.xml
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Examine.pdb
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\HtmlAgilityPack.pdb
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\HtmlAgilityPack.xml
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\interfaces.xml
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Lucene.Net.xml
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\MiniProfiler.pdb
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\MiniProfiler.xml
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Newtonsoft.Json.xml
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Net.Http.Formatting.xml
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Helpers.xml
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Http.xml
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Http.WebHost.xml
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Mvc.xml
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Optimization.xml
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Razor.xml
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.WebPages.xml
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.WebPages.Deployment.xml
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.WebPages.Razor.xml
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\EntityFramework.xml
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\umbraco.xml
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Umbraco.Core.xml
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\umbraco.DataLayer.xml
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\umbraco.editorControls.xml
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\umbraco.MacroEngines.xml
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\umbraco.providers.xml
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\obj\Debug\MvcUmbraco.dll
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\obj\Debug\MvcUmbraco.pdb
+C:\UmbracoTest\2\MvcUmbraco\MvcUmbraco\MvcUmbraco\obj\Debug\MvcUmbraco.csprojResolveAssemblyReference.cache
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\MvcUmbraco.dll.config
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\MvcUmbraco.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\MvcUmbraco.pdb
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Antlr3.Runtime.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\AutoMapper.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\AutoMapper.Net4.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\businesslogic.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\ClientDependency.Core.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\ClientDependency.Core.Mvc.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\cms.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\controls.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\CookComputing.XmlRpcV2.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\EntityFramework.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Examine.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\HtmlAgilityPack.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\ICSharpCode.SharpZipLib.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\ImageProcessor.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\ImageProcessor.Web.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\interfaces.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\log4net.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Lucene.Net.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Microsoft.ApplicationBlocks.Data.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Microsoft.Web.Helpers.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Microsoft.Web.Infrastructure.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\MiniProfiler.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\MySql.Data.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Newtonsoft.Json.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\SQLCE4Umbraco.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Data.SqlServerCe.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Data.SqlServerCe.Entity.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Net.Http.Formatting.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Helpers.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Http.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Http.WebHost.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Mvc.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Optimization.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Providers.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Razor.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.WebPages.Deployment.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.WebPages.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.WebPages.Razor.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\TidyNet.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Umbraco.Core.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\umbraco.DataLayer.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\umbraco.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\umbraco.editorControls.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\umbraco.MacroEngines.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\umbraco.providers.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Umbraco.Web.UI.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\UmbracoExamine.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\UrlRewritingNet.UrlRewriter.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\WebGrease.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Antlr3.Runtime.pdb
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\AutoMapper.xml
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\businesslogic.xml
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\ClientDependency.Core.pdb
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\ClientDependency.Core.Mvc.pdb
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\cms.xml
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\controls.xml
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Examine.pdb
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\HtmlAgilityPack.pdb
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\HtmlAgilityPack.xml
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\interfaces.xml
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Lucene.Net.xml
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\MiniProfiler.pdb
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\MiniProfiler.xml
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Newtonsoft.Json.xml
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Net.Http.Formatting.xml
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Helpers.xml
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Http.xml
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Http.WebHost.xml
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Mvc.xml
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Optimization.xml
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.Razor.xml
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.WebPages.xml
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.WebPages.Deployment.xml
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\System.Web.WebPages.Razor.xml
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\EntityFramework.xml
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\umbraco.xml
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\Umbraco.Core.xml
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\umbraco.DataLayer.xml
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\umbraco.editorControls.xml
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\umbraco.MacroEngines.xml
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\bin\umbraco.providers.xml
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\obj\Debug\MvcUmbraco.dll
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\obj\Debug\MvcUmbraco.pdb
+C:\UmbracoTest\Archive Completed\MvcUmbraco\MvcUmbraco\MvcUmbraco\obj\Debug\MvcUmbraco.csprojResolveAssemblyReference.cache
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\MvcUmbraco.dll.config
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\MvcUmbraco.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\MvcUmbraco.pdb
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\Antlr3.Runtime.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\AutoMapper.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\AutoMapper.Net4.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\businesslogic.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\ClientDependency.Core.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\ClientDependency.Core.Mvc.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\cms.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\controls.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\CookComputing.XmlRpcV2.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\EntityFramework.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\Examine.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\HtmlAgilityPack.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\ICSharpCode.SharpZipLib.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\ImageProcessor.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\ImageProcessor.Web.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\interfaces.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\log4net.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\Lucene.Net.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\Microsoft.ApplicationBlocks.Data.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\Microsoft.Web.Helpers.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\Microsoft.Web.Infrastructure.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\MiniProfiler.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\MySql.Data.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\Newtonsoft.Json.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\SQLCE4Umbraco.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\System.Data.SqlServerCe.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\System.Data.SqlServerCe.Entity.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\System.Net.Http.Formatting.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\System.Web.Helpers.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\System.Web.Http.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\System.Web.Http.WebHost.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\System.Web.Mvc.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\System.Web.Optimization.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\System.Web.Providers.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\System.Web.Razor.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\System.Web.WebPages.Deployment.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\System.Web.WebPages.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\System.Web.WebPages.Razor.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\TidyNet.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\Umbraco.Core.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\umbraco.DataLayer.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\umbraco.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\umbraco.editorControls.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\umbraco.MacroEngines.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\umbraco.providers.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\Umbraco.Web.UI.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\UmbracoExamine.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\UrlRewritingNet.UrlRewriter.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\WebGrease.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\Antlr3.Runtime.pdb
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\AutoMapper.xml
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\businesslogic.xml
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\ClientDependency.Core.pdb
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\ClientDependency.Core.Mvc.pdb
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\cms.xml
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\controls.xml
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\Examine.pdb
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\HtmlAgilityPack.pdb
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\HtmlAgilityPack.xml
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\interfaces.xml
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\Lucene.Net.xml
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\MiniProfiler.pdb
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\MiniProfiler.xml
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\Newtonsoft.Json.xml
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\System.Net.Http.Formatting.xml
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\System.Web.Helpers.xml
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\System.Web.Http.xml
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\System.Web.Http.WebHost.xml
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\System.Web.Mvc.xml
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\System.Web.Optimization.xml
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\System.Web.Razor.xml
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\System.Web.WebPages.xml
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\System.Web.WebPages.Deployment.xml
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\System.Web.WebPages.Razor.xml
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\EntityFramework.xml
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\umbraco.xml
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\Umbraco.Core.xml
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\umbraco.DataLayer.xml
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\umbraco.editorControls.xml
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\umbraco.MacroEngines.xml
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\bin\umbraco.providers.xml
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\obj\Debug\MvcUmbraco.dll
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\obj\Debug\MvcUmbraco.pdb
+C:\UmbracoTest\OP Website Complete Localdb\MvcUmbraco\MvcUmbraco\obj\Debug\MvcUmbraco.csprojResolveAssemblyReference.cache
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\MvcUmbraco.dll.config
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\MvcUmbraco.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\MvcUmbraco.pdb
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\Antlr3.Runtime.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\AutoMapper.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\AutoMapper.Net4.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\businesslogic.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\ClientDependency.Core.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\ClientDependency.Core.Mvc.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\cms.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\controls.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\CookComputing.XmlRpcV2.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\EntityFramework.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\Examine.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\HtmlAgilityPack.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\ICSharpCode.SharpZipLib.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\ImageProcessor.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\ImageProcessor.Web.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\interfaces.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\log4net.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\Lucene.Net.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\Microsoft.ApplicationBlocks.Data.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\Microsoft.Web.Infrastructure.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\MiniProfiler.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\MySql.Data.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\Newtonsoft.Json.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\SQLCE4Umbraco.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\System.Data.SqlServerCe.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\System.Data.SqlServerCe.Entity.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\System.Net.Http.Formatting.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\System.Web.Helpers.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\System.Web.Http.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\System.Web.Http.WebHost.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\System.Web.Mvc.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\System.Web.Optimization.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\System.Web.Providers.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\System.Web.Razor.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\System.Web.WebPages.Deployment.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\System.Web.WebPages.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\System.Web.WebPages.Razor.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\TidyNet.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\Umbraco.Core.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\umbraco.DataLayer.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\umbraco.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\umbraco.editorControls.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\umbraco.MacroEngines.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\umbraco.providers.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\Umbraco.Web.UI.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\UmbracoExamine.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\UrlRewritingNet.UrlRewriter.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\WebGrease.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\Antlr3.Runtime.pdb
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\AutoMapper.xml
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\businesslogic.xml
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\ClientDependency.Core.pdb
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\ClientDependency.Core.Mvc.pdb
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\cms.xml
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\controls.xml
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\Examine.pdb
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\HtmlAgilityPack.pdb
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\HtmlAgilityPack.xml
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\interfaces.xml
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\Lucene.Net.xml
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\MiniProfiler.pdb
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\MiniProfiler.xml
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\Newtonsoft.Json.xml
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\System.Net.Http.Formatting.xml
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\System.Web.Helpers.xml
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\System.Web.Http.xml
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\System.Web.Http.WebHost.xml
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\System.Web.Mvc.xml
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\System.Web.Optimization.xml
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\System.Web.Razor.xml
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\System.Web.WebPages.xml
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\System.Web.WebPages.Deployment.xml
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\System.Web.WebPages.Razor.xml
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\EntityFramework.xml
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\umbraco.xml
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\Umbraco.Core.xml
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\umbraco.DataLayer.xml
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\umbraco.editorControls.xml
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\umbraco.MacroEngines.xml
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\umbraco.providers.xml
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\obj\Debug\MvcUmbraco.dll
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\obj\Debug\MvcUmbraco.pdb
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\obj\Debug\MvcUmbraco.csprojResolveAssemblyReference.cache
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\SQLCE4Umbraco.xml
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\Umbraco.Web.UI.xml
+C:\UmbracoTest\Complete\MvcUmbraco\MvcUmbraco\bin\UmbracoExamine.xml

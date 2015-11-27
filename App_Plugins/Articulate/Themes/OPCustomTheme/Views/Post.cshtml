@@ -1,0 +1,72 @@
+@using Articulate
+@using Umbraco.Core
+@model Articulate.Models.PostModel
+@{
+    Layout = "Master.cshtml";
+    ViewBag.CssBodyClass = "post-template";
+}
+
+<div class="onepcssgrid-1200">
+    <div class="onerow">
+        <main class="archive" role="main">
+            <div class="article_border">
+                <article>
+                    <div class="article_title_bar">
+                        <h1 class="post-title"><a href="@Model.Url">@Model.Name</a></h1>
+                        <div class="postby_date_box">
+                            <span>
+                                Posted by <span class="postby_author">
+                                    <!-- Author Name -->
+                                    @if (!Model.Author.Url.IsNullOrWhiteSpace())
+                                    {
+                                        <a href="@Model.Author.Url">@Model.Author.Name</a>
+                                    }
+                                    else
+                                    {
+                                        @Model.Author.Name
+                                    }
+                                </span> on
+                            </span>
+                            <!-- Date Format e.g 23 February 2015 - 05:42pm -->
+                            <time datetime="@Model.PublishedDate.ToString("yyyy-MM-dd")">
+                                @Model.PublishedDate.ToString("dd MMMM yyyy - hh:mm tt")
+                            </time>
+                        </div>
+
+                       @* @Html.ThemedPartial(Model, "PostTags") *@
+                       </div>
+                    <section class="article_content">
+                        <p>
+                            @Model.Body
+                        </p>
+                    </section>
+
+                        <!-- <section class="share">
+                            <p class="info prompt">Share this post</p>
+                            <a href="http://twitter.com/share?text=@Model.Name&url=@Model.NiceUrlWithDomain()"
+                               onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                                <i class="fa fa-2x fa-fw fa-twitter"></i> <span class="hidden">Twitter</span>
+                            </a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=@Model.NiceUrlWithDomain()"
+                               onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                                <i class="fa fa-2x fa-fw fa-facebook-square"></i> <span class="hidden">Facebook</span>
+                            </a>
+                            <a href="https://plus.google.com/share?url=@Model.NiceUrlWithDomain()"
+                               onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                                <i class="fa fa-2x fa-fw fa-google-plus-square"></i> <span class="hidden">Google+</span>
+                            </a>
+                        </section> -->
+
+                        @if (Model.EnableComments)
+                        {
+                            @Html.ThemedPartial(Model, "CommentsDisqus")
+                            @*@Html.ThemedPartial(Model, "CommentsGooglePlus")*@
+                            @*@Html.ThemedPartial(Model, "CommentsFacebook")*@
+                        }
+
+</article>
+                </div>
+
+</main>
+        </div>
+    </div>

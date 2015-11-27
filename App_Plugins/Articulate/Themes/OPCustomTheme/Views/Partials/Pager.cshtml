@@ -1,0 +1,71 @@
+@model Articulate.Models.PagerModel
+
+@{
+    @* ##### Initial Logic ##### *@
+    var rootUrl = Model.PreviousUrl ?? Model.NextUrl;
+
+    if (rootUrl != null)
+    {
+        rootUrl = rootUrl.Substring(0, rootUrl.IndexOf("?p=", StringComparison.Ordinal) + 3);
+
+        <div class="onerow">
+            @* ##### Show number of pages ##### *@
+            <span class="page-number">@(Model.CurrentPageIndex + 1) of @Model.TotalPages pages</span>
+        </div>
+    
+        <div class="onerow">
+            @* ##### Horizontal Pager Navigation ##### *@
+            <div class="pagination" role="pagination">
+                <ul>
+                    @* ##### Previous Button ##### *@
+                    @if (Model.HasPrevious)
+                    {
+                        <li class="" role="pagination">
+                            <a class="" href="@Model.PreviousUrl" aria-label="Newer">
+                                <span aria-hidden="true">&laquo; Previous</span>
+                            </a>
+                        </li>
+                    }
+
+
+                    @* ##### Page Numbers ##### *@
+                    @for (int cpi = Math.Max(Model.CurrentPageIndex - 3, 0); cpi < Math.Min(Model.CurrentPageIndex + 4, Model.TotalPages); cpi++)
+                    {
+                        var pageUrl = rootUrl + (cpi + 1);
+                        <li><a href="@pageUrl" aria-label="Page">@(cpi + 1)</a></li>
+                    }
+
+
+                    @* ##### Next Button ##### *@
+                    @if (Model.HasNext)
+                    {
+                        <li class="" role="pagination">
+                            <a class="" href="@Model.NextUrl" aria-label="Previous">
+                                <span>Next &raquo;</span>
+                            </a>
+                        </li>
+                    }
+
+                </ul>
+            </div>
+        </div>
+    }
+}
+
+<!-- Active Current Page Highlgihted -->
+<script>
+    $(document).ready(function () {
+        $(function () {
+            // this will get the full URL at the address bar
+            var url = window.location.href;
+
+            // passes on every "a" tag
+            $(".pagination a").each(function () {
+                // checks if its the same on the address bar
+                if (url == (this.href)) {
+                    $(this).closest("a").addClass("active");
+                }
+            });
+        });
+    });
+</script>

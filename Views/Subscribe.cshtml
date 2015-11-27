@@ -1,0 +1,16 @@
+﻿@using MvcUmbraco.Models
+@inherits UmbracoViewPage<SubscribeThanksModel>
+@{
+Layout = "_Layout.cshtml";
+}
+
+<div class="onepcssgrid-1200">
+    <div class="onerow">
+        <div class="col12">
+            <section id="subscribe">
+                <h3>Thank you for subscribing.</h3>
+                <p>@Html.Raw(Model.BodyText)</p>
+            </section>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+﻿@using MvcUmbraco.Models
+@inherits UmbracoViewPage<AboutUsModel>
+    @{
+        Layout = "_Layout.cshtml";
+    }
+
+    <div class="onepcssgrid-1200">
+        <div class="onerow">
+            <div id="aboutbox">
+                <div class="col8">
+                    <section id="about">
+                        <h3>About Us</h3>
+                        <p>@Html.Raw(@Model.BodyText)</p>
+                    </section>
+                </div>
+                <div class="col4 last">
+                    <div id="quotebox">
+                        <img class="leftsmark" src="~/Content/images/leftsmark.png" />
+                        <p>@Model.QuoteOne</p>
+                        <img class="rightsmark" src="~/Content/images/rightsmark.png" />
+                    </div>
+                </div>
+                <div class="col4 last">
+                    <div id="quotebox2">
+                        <img class="leftsmark" src="~/Content/images/leftsmark.png" />
+                        <p>@Model.QuoteTwo</p>
+                        <img class="rightsmark" src="~/Content/images/rightsmark.png" />
+                    </div>
+                </div>
+            </div>
+        </div> <!-- Row Closing -->
+    </div> <!-- 1200 Closing -->

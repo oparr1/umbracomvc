@@ -1,0 +1,65 @@
+@using System.Web.Mvc.Html
+@using Umbraco.Web
+@using MvcUmbraco.Controllers.SurfaceControllers
+@using MvcUmbraco.Models
+@using System.Web.Optimization
+@model RegisterViewModel
+@{
+    Html.EnableClientValidation(true);
+    Html.EnableUnobtrusiveJavaScript(true);
+}
+<div class="onepcssgrid-1200">
+    <div class="onerow">
+        <div class="col10">
+            
+                @if (Convert.ToBoolean(TempData["IsSuccessful"]))
+                {
+                    <section id="sectionPadding">
+                        <div class="alert alert-success">
+                            <h3>Registration Succesful!</h3>
+                            <p>Please check your inbox to confirm your registration</p>
+                        </div>
+                    </section>
+                }
+                else
+                {
+                    using (Html.BeginUmbracoForm<AuthSurfaceController>("HandleRegister"))
+                    {
+                        @Html.AntiForgeryToken()
+                        @Html.ValidationSummary(false)
+    <section id="registerbox">
+        <h3>Create a new account</h3>
+        <hr />
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, "Name", new { @class = "control-label" })
+            @Html.TextBoxFor(model => model.Name, new { @class = "form-control", placeholder = "" })
+            @Html.ValidationMessageFor(model => model.Name, string.Empty, new { @class = "help-block" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.EmailAddress, "Email address", new { @class = "control-label" })
+            @Html.TextBoxFor(model => model.EmailAddress, new { @class = "form-control", placeholder = "" })
+            @Html.ValidationMessageFor(model => model.EmailAddress, string.Empty, new { @class = "help-block" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.ConfirmEmailAddress, "Confirm email address", new { @class = "control-label" })
+            @Html.TextBoxFor(model => model.ConfirmEmailAddress, new { @class = "form-control", placeholder = "" })
+            @Html.ValidationMessageFor(model => model.ConfirmEmailAddress, string.Empty, new { @class = "help-block" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Password, "Password", new { @class = "control-label" })
+            @Html.PasswordFor(model => model.Password, new { @class = "form-control", placeholder = "" })
+            @Html.ValidationMessageFor(model => model.Password, string.Empty, new { @class = "help-block" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.ConfirmPassword, "Confirm password", new { @class = "control-label" })
+            @Html.PasswordFor(model => model.ConfirmPassword, new { @class = "form-control", placeholder = "" })
+            @Html.ValidationMessageFor(model => model.ConfirmPassword, string.Empty, new { @class = "help-block" })
+        </div>
+        <button type="submit" class="btn btn-default">Register</button>
+    </section>
+                    }
+                }
+        </div>
+    </div>
+</div>

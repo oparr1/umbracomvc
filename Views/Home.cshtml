@@ -1,0 +1,92 @@
+﻿@using MvcUmbraco.Models
+@using System.Web.Optimization
+@inherits UmbracoViewPage<HomeModel>
+@{
+    Layout = "_Layout.cshtml";
+}
+<div id="mainslider" class="owl-carousel">
+    <div class="item">
+        <img src="@Umbraco.Media(Model.SlideOne).Url" class="slide1" alt="slide 1">
+        <img src="@Umbraco.Media(Model.SlideOneSmall).Url" class="slide1_978px" alt="slide 1">
+    </div>
+    <div class="item">
+        <img src="@Umbraco.Media(Model.SlideTwo).Url" class="slide2" alt="slide 2">
+        <img src="@Umbraco.Media(Model.SlideTwoSmall).Url" class="slide2_978px" alt="slide 2">
+    </div>
+    <div class="item">
+        <img src="@Umbraco.Media(Model.SlideThree).Url" class="slide3" alt="slide 3">
+        <img src="@Umbraco.Media(Model.SlideThreeSmall).Url" class="slide3_978px" alt="slide 3">
+    </div>
+</div>
+<div id="serviceswrapper">
+    <div id="services">
+        <div class="one box"><a href="service-one"><img src="@Umbraco.Media(Model.ServiceOne).Url" alt="service one"></a></div>
+        <div class="two box"><a href="service-two"><img src="@Umbraco.Media(Model.ServiceTwo).Url" alt="service two"></a></div>
+        <div class="three box"><a href="service-three"><img src="@Umbraco.Media(Model.ServiceThree).Url" alt="service three"></a></div>
+        <div class="four box"><a href="service-four"><img src="@Umbraco.Media(Model.ServiceFour).Url" alt="service four"></a></div>
+    </div>
+</div>
+<div class="onepcssgrid-1200">
+    <div class="onerow">
+        <div class="col12">
+            <div id="content_one">
+                <!-- Main Heading/Body Text -->
+                <h1>@Model.MainHeading</h1>
+                <p>@Html.Raw(Model.MainBody)</p>
+                <div id="moreinfobutton">
+                    <a href="home">See More</a>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Row Closing -->
+    <div id="content_two" class="onerow">
+        <div id="product_left">
+            <div class="centered"><img src="@Umbraco.Media(Model.ProductOne).Url" alt="product1"></div>
+        </div>
+        <div id="product_right">
+            <h2>@Model.ProductOneHeading</h2>
+            <p>@Model.ProductOneText</p>
+        </div>
+    </div> <!-- Row Closing -->
+    <div class="onerow">
+        <div class="col8">
+            <img src="@Umbraco.Media(Model.ProductTwo).Url" alt="product2">
+            <div id="product2text">
+                <p>@Model.ProductTwoText</p>
+            </div>
+        </div>
+        <div id="product3">
+            <div class="col4 last">
+                <img src="@Umbraco.Media(Model.ProductThree).Url" alt="product3">
+                <div id="product3text">
+                    <p>@Model.ProductThreeText</p>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Row Closing -->
+    <div class="onerow">
+        <div id="product4">
+            <div class="col8">
+                <img src="@Umbraco.Media(Model.ProductFour).Url" alt="product4">
+            </div>
+        </div>
+        <div class="col4 last">
+            <div id="product4text">
+                <p>@Model.ProductFourText</p>
+            </div>
+        </div>
+    </div> <!-- Row Closing -->
+    <div class="onerow">
+        <div class="col4">
+            <div class="bundle_one"><a href="bundle-one"><img src="@Umbraco.Media(Model.BundleOne).Url" alt="bundle one"></a></div>
+        </div>
+        <div class="col4">
+            <div class="bundle_two"><a href="bundle-two"><img src="@Umbraco.Media(Model.BundleTwo).Url" alt="bundle two"></a></div>
+        </div>
+        <div class="col4 last">
+            <div class="bundle_three"><a href="bundle-three"><img src="@Umbraco.Media(Model.BundleThree).Url" alt="bundle three"></a></div>
+        </div>
+    </div> <!-- Row Closing -->
+</div> <!-- 1200 closing -->
+
+    @Scripts.Render("~/bundles/index") <!-- Slider, Equal height -->

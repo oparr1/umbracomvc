@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="UmbracoDB" Class="SqlQueryDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\UmbracoDB.mdf;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="UmbracoDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.country" Member="countries">
+    <Type Name="country">
+      <Column Name="Code" Type="System.String" DbType="Char(3) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="Char(52) NOT NULL" CanBeNull="false" />
+      <Column Name="Continent" Type="System.String" DbType="VarChar(13) NOT NULL" CanBeNull="false" />
+      <Column Name="Region" Type="System.String" DbType="Char(26) NOT NULL" CanBeNull="false" />
+      <Column Name="SurfaceArea" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+      <Column Name="IndepYear" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Population" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LifeExpectancy" Type="System.Decimal" DbType="Decimal(3,1)" CanBeNull="true" />
+      <Column Name="GNP" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="GNPOld" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="LocalName" Type="System.String" DbType="Char(45) NOT NULL" CanBeNull="false" />
+      <Column Name="GovernmentForm" Type="System.String" DbType="Char(45) NOT NULL" CanBeNull="false" />
+      <Column Name="HeadOfState" Type="System.String" DbType="Char(60)" CanBeNull="true" />
+      <Column Name="Capital" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Code2" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.countrylanguage" Member="countrylanguages">
+    <Type Name="countrylanguage">
+      <Column Name="CountryCode" Type="System.String" DbType="Char(3) NOT NULL" CanBeNull="false" />
+      <Column Name="Language" Type="System.String" DbType="Char(30) NOT NULL" CanBeNull="false" />
+      <Column Name="IsOfficial" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="Percentage" Type="System.Decimal" DbType="Decimal(4,1) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

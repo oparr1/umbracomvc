@@ -1,0 +1,29 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	Layout = "_Layout.cshtml";
+    ViewBag.Title = "Search";
+    ViewBag.MetaDescription = "Search the website";
+    ViewBag.MetaKeywords = "";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>lol</title>
+</head>
+<body>
+    <div class="onepcssgrid-1200">
+        <div class="onerow">
+            <div class="searchthewebsite">
+                <h1>Search the website</h1>
+            </div>
+        </div>
+        <div class="col12">
+            <!-- Order Specific to more generic -->
+			<!-- Don't forget to change to root content -->
+            @Umbraco.RenderMacro("ezSearch", new { SearchFormLocation = "TOP", RootContentNodeId = "1179", IndexType = "CONTENT", SearchFields = "nodeName, quoteone, quotetwo, mainBody, bodyText", PreviewFields = "bodyText, mainbody, quoteone, quotetwo", HideFromSearchField = "dynamic" })
+        </div>
+    </div>
+    <div class="ezsearch-result-count">
+    </div>
+</body>
+</html>
